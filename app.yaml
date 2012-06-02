@@ -1,0 +1,11 @@
+application: gw2skills
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /.*
+  script: gw2skills.py
